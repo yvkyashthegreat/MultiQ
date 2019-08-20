@@ -1,0 +1,107 @@
+<!--<div class="scrollmenu">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#support">Support</a>
+        <a href="#blog">Blog</a>
+        <a href="#tools">Tools</a>
+        <a href="#base">Base</a>
+        <a href="#custom">Custom</a>
+        <a href="#more">More</a>
+        <a href="#logo">Logo</a>
+        <a href="#friends">Friends</a>
+        <a href="#partners">Partners</a>
+        <a href="#people">People</a>
+        <a href="#work">Work</a>
+    </div>
+
+    <h2>Horizontal Scrollable Menu</h2>
+    <p>Resize the browser window to see the effect.</p>-->
+<!-- My pexels api key = 563492ad6f91700001000001d86d5d94edfe4c5b8bec1f54f1a5a284 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 10px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            /* display: none; */
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        div.scrollmenu {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>MultiQ</h2>
+
+    <input type="text" placeholder="Search" id = "photosearch"><br/>
+    <div id="Photos" class="tabcontent">
+        <div class="scrollmenu">
+            <a href="#" onclick = "document.getElementById ('photoiframe').src = 'https:\/\/www.pexels.com/search/' + document.getElementById ('photosearch').value;">Pexels</a>
+            <a href="#" onclick = "document.getElementById ('photoiframe').src = 'https:\/\/www.shutterstock.com/search/' + document.getElementById ('photosearch').value.replace (' ', '+');">Shutterstock</a>
+            <a href="#" onclick = "document.getElementById ('photoiframe').src = 'https:\/\/www.pixabay.com/images/search/' + document.getElementById ('photosearch').value;">Pixabay</a>
+            <a href="#" onclick = "document.getElementById ('photoiframe').src = 'https:\/\/www.freerangestock.com/search/' + document.getElementById ('photosearch').value.replace (' ', '-');">Free Range</a>
+        </div>
+    </div>
+
+    <iframe id = "photoiframe" src="" frameborder="0" style="height: 100vh; width: 100vw;"></iframe>
+
+</body>
+
+</html>
